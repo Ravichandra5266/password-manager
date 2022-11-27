@@ -1,0 +1,106 @@
+.orange {
+  background-color: #f97316;
+}
+.green {
+  background-color: #14b8a6;
+}
+.white {
+  background-color: #ffffff;
+}
+.yellow {
+  background-color: #f59e0b;
+}
+.rose {
+  background-color: #b91c1c;
+}
+.skyblue {
+  background-color: #0ea5e9;
+}
+.gray {
+  background-color: #64748b;
+}
+.silver {
+  background-color: #b6c3ca;
+}
+.light {
+  background-color: #7683cb;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100px;
+  padding: 10px;
+  margin: 10px;
+  min-width: 100px;
+  border: 1px solid #c3caea;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .list-container {
+    width: 320px;
+  }
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: roboto;
+}
+.user-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+.web-text {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: roboto;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+.user-name {
+  font-size: 18px;
+  font-family: roboto;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+.password {
+  font-size: 18px;
+  font-family: roboto;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+.delete-btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.delete-img {
+  width: 30px;
+  height: 30px;
+}
+.content-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.star-img {
+  width: 100px;
+}

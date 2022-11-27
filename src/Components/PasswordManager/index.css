@@ -1,0 +1,250 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #9ba9eb, #c3caea);
+}
+@media (min-width: 768px) {
+  .container {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.app-logo {
+  width: 150px;
+}
+@media (min-width: 768px) {
+  .app-logo {
+    width: 200px;
+  }
+}
+.user-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #5763a5;
+  min-height: 300px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .user-form-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+  }
+}
+.password-img {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .password-img {
+    order: 1;
+    width: 300px;
+  }
+}
+.form-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #454f84;
+  width: 100%;
+  min-height: 150px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .form-card-container {
+    width: 40%;
+    height: 280px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.form-heading {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: roboto;
+  margin-top: 0px;
+}
+.input-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.img {
+  width: 30px;
+  height: 30px;
+}
+.input-ele {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 15px;
+  font-family: roboto;
+  padding-left: 10px;
+}
+.submit-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: roboto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #0b69ff;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+}
+.length-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  background-color: #5763a5;
+  min-height: 200px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .length-search-container {
+    width: 100%;
+  }
+}
+.details-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-length {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: roboto;
+}
+@media (min-width: 768px) {
+  .list-length {
+    font-size: 20px;
+  }
+}
+.list-count {
+  margin-left: 5px;
+  font-size: 15px;
+  font-family: roboto;
+  color: white;
+}
+@media (min-width: 768px) {
+  .list-count {
+    font-size: 20px;
+  }
+}
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 50%;
+  background-color: white;
+  margin-left: 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .search-container {
+    width: 25%;
+    height: 40px;
+  }
+}
+.search-ele {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.search-img {
+  width: 30px;
+  height: 30px;
+}
+.line {
+  width: 100%;
+  border: 1px solid black;
+}
+.checkbox-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+.check-ele {
+  width: 20px;
+  height: 20px;
+}
+.each-user-container-details {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .each-user-container-details {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+.nopassword-img {
+  width: 150px;
+}
+@media (min-width: 768px) {
+  .nopassword-img {
+    width: 200px;
+  }
+}
+.no-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.no-passsword-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  font-family: roboto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
