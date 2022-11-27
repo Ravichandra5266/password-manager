@@ -52,12 +52,7 @@ class PasswordManager extends Component {
   onSubmitForm = event => {
     event.preventDefault()
 
-    const {
-      initialWebName,
-      initialUserName,
-      initialPassword,
-      isCheck,
-    } = this.state
+    const {initialWebName, initialUserName, initialPassword} = this.state
 
     const colorBg =
       initialBackgroundColor[
@@ -70,7 +65,6 @@ class PasswordManager extends Component {
       userName: initialUserName,
       password: initialPassword,
       color: colorBg,
-      checkStatus: isCheck,
     }
 
     this.setState(prevState => ({
@@ -84,7 +78,7 @@ class PasswordManager extends Component {
   getCheckedPassword = () => {
     const {isCheck, userPasswordList} = this.state
     if (isCheck === true) {
-      return userPasswordList.filter(each => each.checkStatus === true)
+      return userPasswordList.map(each => each)
     }
     return userPasswordList
   }
@@ -110,6 +104,7 @@ class PasswordManager extends Component {
       initialPassword,
       initialSearch,
       isCheck,
+      userPasswordList,
     } = this.state
     const checkedPassword = this.getCheckedPassword()
     const noListCount = checkedPassword.length
@@ -217,6 +212,7 @@ class PasswordManager extends Component {
               searchResults.map(eachDetails => (
                 <PasswordItemList
                   eachDetails={eachDetails}
+                  isCheck={isCheck}
                   onDelteUserList={this.onDelteUserList}
                   key={eachDetails.id}
                 />

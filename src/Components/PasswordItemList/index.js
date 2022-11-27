@@ -1,12 +1,13 @@
 import './index.css'
 
 const PasswordItemList = props => {
-  const {eachDetails, onDelteUserList} = props
-  const {id, webName, userName, password, color, checkStatus} = eachDetails
+  const {eachDetails, onDelteUserList, isCheck} = props
+  const {id, webName, userName, password, color} = eachDetails
   const logo = webName.slice(0, 1)
   const onDelete = () => {
     onDelteUserList(id)
   }
+
   return (
     <li className="list-container">
       <div className={`logo-container ${color}`}>
@@ -16,7 +17,7 @@ const PasswordItemList = props => {
         <div className="user-content-container">
           <p className="web-text">{webName}</p>
           <p className="user-name">{userName}</p>
-          {checkStatus ? (
+          {isCheck ? (
             <p className="password">{password}</p>
           ) : (
             <img
@@ -26,12 +27,7 @@ const PasswordItemList = props => {
             />
           )}
         </div>
-        <button
-          testid="delete"
-          onClick={onDelete}
-          type="button"
-          className="delete-btn"
-        >
+        <button onClick={onDelete} type="button" className="delete-btn">
           <img
             src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"
             alt="delete"
